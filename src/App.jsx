@@ -1,5 +1,6 @@
 import "./App.css";
 import TopButtons from "./components/TopButtons";
+import Inputs from "./components/Inputs";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       shadow-xl shadow-gray-400"
       >
         <TopButtons />
+        <Inputs />
       </div>
     </>
   );
