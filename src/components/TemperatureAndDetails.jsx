@@ -6,7 +6,6 @@ import {
   UilWind,
   UilSun,
   UilSunset,
-  Uilmoon,
 } from "@iconscout/react-unicons";
 function TemperatureAndDetails() {
   return (
