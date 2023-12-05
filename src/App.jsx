@@ -5,8 +5,14 @@ import TimeAndLocation from "./components/TimeAndLocation";
 import TemperatureAndDetails from "./components/TemperatureAndDetails";
 import Forecast from "./components/Forecast";
 import getFormattedWeatherData from "./weatherService.JS";
+import { useState } from "react";
 
 function App() {
+const [query, setQuery] = useState({q: 'berlin'})
+const [units, setUnits] = useState('metric')
+const [weather, setWeather] = useState(null)
+
+
   const fetchWeather = async () => {
     const data = await getFormattedWeatherData( { q: "london" });
     console.log(data);
